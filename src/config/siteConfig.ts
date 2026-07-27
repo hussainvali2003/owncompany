@@ -1,36 +1,36 @@
 import { JobOpening, IndustryVertical, FAQItem, Testimonial } from '../types';
 
 export const siteConfig = {
-  name: "Viraat Workforce Solutions",
-  shortName: "Viraat Workforce",
+  name: "Jobtrica Workforce Solutions",
+  shortName: "Jobtrica",
   tagline: "Connecting Industries with Reliable Workforce",
-  subheadline: "Trusted Blue-Collar Workforce Solutions for Manufacturing, Warehousing, Logistics, and Industrial Companies across India.",
-  description: "Viraat Workforce Solutions is India's leading workforce partner for manpower sourcing, industrial staffing support, and blue-collar talent recruitment.",
-  domain: "https://viraatworkforce.com",
+  subheadline: "Trusted Blue-Collar Workforce Sourcing for Manufacturing, Warehousing, Logistics and Auto-Ancillary Companies across Ahmedabad's Industrial Belt.",
+  description: "Jobtrica is Ahmedabad's blue-collar workforce sourcing partner connecting manufacturing, warehousing, automobile & logistics companies in Sanand, Naroda, Vatva, Odhav & Changodar with reliable manpower. Zero-fee jobs for candidates.",
+  domain: "https://jobtrica.com",
   
   contact: {
-    phone: "+91 98765 43210",
-    phoneAlt: "+91 80 4567 8900",
-    whatsappNumber: "919876543210",
-    whatsappUrl: "https://wa.me/919876543210?text=Hello%20Viraat%20Workforce%20Team,%20I%20would%20like%20to%20inquire%20about%20your%20manpower%20solutions.",
-    email: "contact@viraatworkforce.com",
-    partnerEmail: "partnerships@viraatworkforce.com",
-    address: "Plot 42, Sector 18, Industrial Area, Gurgaon, Haryana - 122015, India",
-    hubs: ["Gurgaon", "Pune (Chakan)", "Chennai (Sriperumbudur)", "Ahmedabad (Sanand)", "Bangalore (Hosur)", "Pithampur"],
-    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14030.735817551062!2d77.0700!3d28.4800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1912f2c8db4b%3A0x2a0d1912f2c8db4b!2sSector%2018%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+    phone: "+91 63059 32569",
+    phoneAlt: "",
+    whatsappNumber: "916305932569",
+    whatsappUrl: "https://wa.me/916305932569?text=Hello%20Jobtrica%20Team,%20I%20would%20like%20to%20inquire%20about%20your%20manpower%20solutions.",
+    email: "jobtrica@gmail.com",
+    partnerEmail: "jobtrica@gmail.com",
+    address: "Based in Ahmedabad, Gujarat",
+    hubs: ["Sanand", "Naroda", "Vatva", "Odhav", "Changodar"],
+    googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.29910970977!2d72.43965584999999!3d23.0202434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fccd11d087798c9!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
   },
 
   forms: {
-    candidateRegistration: "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE_CANDIDATE/viewform",
-    agencyPartnership: "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE_AGENCY/viewform",
-    employerRequirement: "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE_EMPLOYER/viewform"
+    candidateRegistration: "https://docs.google.com/forms/d/e/1FAIpQLSd4rUqdNYHQwRcI24m1vT4p9lroJzHW_-JwJUHfITMTjtCyYQ/viewform",
+    agencyPartnership: "https://docs.google.com/forms/d/e/1FAIpQLSdhnG47IphUk4kk_kO5wmkhROm-Lnnd8VVOiqIDZnPQDp5i2Q/viewform",
+    employerRequirement: "https://docs.google.com/forms/d/e/1FAIpQLSdhnG47IphUk4kk_kO5wmkhROm-Lnnd8VVOiqIDZnPQDp5i2Q/viewform"
   },
 
   stats: [
-    { label: "Workers Deployed", value: "5,000+", iconName: "Users" },
-    { label: "Partner Agencies", value: "50+", iconName: "Handshake" },
-    { label: "Industrial Hubs Covered", value: "15+", iconName: "MapPin" },
-    { label: "Fulfillment Support", value: "98.5%", iconName: "ShieldCheck" },
+    { label: "Ahmedabad Operations", value: "Newly Launched", iconName: "Users" },
+    { label: "Candidate Fees — Always", value: "0% Fees", iconName: "Handshake" },
+    { label: "Ahmedabad Sourcing Hubs", value: "5 Targeted", iconName: "MapPin" },
+    { label: "Response Commitment", value: "48-Hour", iconName: "ShieldCheck" },
   ]
 };
 
@@ -43,8 +43,8 @@ export const trustBadges = [
   },
   {
     id: "2",
-    title: "Verified Hiring Partners",
-    description: "Direct tie-ups with leading manufacturing plants, warehousing giants, and top manpower agencies.",
+    title: "Direct Outreach to Manufacturing Plants & Agencies",
+    description: "Actively building direct relationships with manufacturing plants, warehousing operators, and manpower agencies across Ahmedabad.",
     icon: "Building2"
   },
   {
@@ -68,7 +68,7 @@ export const trustBadges = [
   {
     id: "6",
     title: "Reliable Workforce Solutions",
-    description: "Dependable partner for staffing agencies needing candidate sourcing & screening pipelines.",
+    description: "A dedicated, responsive partner for staffing agencies needing candidate sourcing & screening support in Ahmedabad's industrial belt.",
     icon: "Award"
   }
 ];
@@ -80,7 +80,7 @@ export const industryList: IndustryVertical[] = [
     description: "Sourcing assembly operators, machine handlers, and quality inspectors for high-volume production lines.",
     iconName: "Factory",
     rolesSourced: ["Assembly Line Operators", "Machine Attendants", "Quality Inspectors", "Helper"],
-    popularLocation: "Chakan (Pune) & Sanand (Gujarat)"
+    popularLocation: "Sanand & Naroda (Ahmedabad)"
   },
   {
     id: "automobile",
@@ -88,7 +88,7 @@ export const industryList: IndustryVertical[] = [
     description: "Skilled & semi-skilled manpower for automotive manufacturing, stamping, body shops, and spare parts assembly.",
     iconName: "Car",
     rolesSourced: ["Welders (MIG/TIG)", "Fitters", "CNC Operators", "Paint Shop Helpers"],
-    popularLocation: "Sriperumbudur (Chennai) & Gurgaon (Haryana)"
+    popularLocation: "Sanand GIDC — Ahmedabad's Auto-Ancillary Belt"
   },
   {
     id: "warehouse",
@@ -96,7 +96,7 @@ export const industryList: IndustryVertical[] = [
     description: "High-speed worker deployment for order fulfillment, sorting, material movement, and inventory management.",
     iconName: "Boxes",
     rolesSourced: ["Order Pickers", "Packers", "Forklift Operators", "Inventory Helpers"],
-    popularLocation: "Bhiwandi (Mumbai) & Taoru (NCR)"
+    popularLocation: "Changodar & Sanand (Ahmedabad)"
   },
   {
     id: "logistics",
@@ -104,7 +104,7 @@ export const industryList: IndustryVertical[] = [
     description: "Dependable drivers, dock loaders, and transit handlers to keep supply chains moving seamlessly.",
     iconName: "Truck",
     rolesSourced: ["Heavy Drivers", "Dock Loaders", "Parcel Scanners", "Unloaders"],
-    popularLocation: "Pan-India Logistics Hubs"
+    popularLocation: "Ahmedabad–Vatva–Changodar Logistics Corridor"
   },
   {
     id: "construction",
@@ -112,7 +112,7 @@ export const industryList: IndustryVertical[] = [
     description: "Certified tradesmen and site helpers for commercial infrastructure and civil engineering projects.",
     iconName: "HardHat",
     rolesSourced: ["Masons", "Bar Benders", "Electricians", "Site Helpers"],
-    popularLocation: "Delhi-NCR, Bangalore & Hyderabad"
+    popularLocation: "Ahmedabad & Gandhinagar"
   },
   {
     id: "pharma",
@@ -120,7 +120,7 @@ export const industryList: IndustryVertical[] = [
     description: "Strictly trained cleanroom packing associates, chemical handlers, and utility staff for pharma plants.",
     iconName: "Pill",
     rolesSourced: ["Cleanroom Packers", "Machine Operators", "Utility Helpers"],
-    popularLocation: "Baddi (HP) & Hyderabad"
+    popularLocation: "Ahmedabad & Vatva Industrial Estate"
   },
   {
     id: "engineering",
@@ -128,7 +128,7 @@ export const industryList: IndustryVertical[] = [
     description: "Specialized technicians, turners, fitters, and riggers for heavy equipment fabrication.",
     iconName: "Wrench",
     rolesSourced: ["Fitters", "Turners", "Riggers", "Maintenance Trainees"],
-    popularLocation: "Coimbatore & Jamshedpur"
+    popularLocation: "Odhav & Naroda (Ahmedabad)"
   },
   {
     id: "textile",
@@ -136,7 +136,7 @@ export const industryList: IndustryVertical[] = [
     description: "Skilled tailors, cutting operators, and packing workers for export garment factories.",
     iconName: "Shirt",
     rolesSourced: ["Sewing Operators", "Cutting Helpers", "Ironing & Packing Staff"],
-    popularLocation: "Tirupur & Surat"
+    popularLocation: "Naroda (Ahmedabad) & Surat"
   },
   {
     id: "chemical",
@@ -144,7 +144,7 @@ export const industryList: IndustryVertical[] = [
     description: "Safety-trained operators and material handlers equipped for process industries.",
     iconName: "FlaskConical",
     rolesSourced: ["Process Helpers", "Packaging Staff", "Material Handlers"],
-    popularLocation: "Ankleshwar & Dahej"
+    popularLocation: "Vatva (Ahmedabad), Ankleshwar & Dahej"
   },
   {
     id: "fmcg",
@@ -152,86 +152,64 @@ export const industryList: IndustryVertical[] = [
     description: "Rapid onboarding for high-speed filling, packaging, and sorting lines.",
     iconName: "ShoppingBag",
     rolesSourced: ["Packaging Operators", "Sorting Helpers", "Line Staff"],
-    popularLocation: "Haridwar & Indore"
+    popularLocation: "Ahmedabad & Vadodara"
   }
 ];
 
 export const currentOpenings: JobOpening[] = [
   {
     id: "job-1",
-    title: "Machine Operator (CNC / VMC Trainee)",
+    title: "Machine Operator (CNC / VMC)",
     category: "Manufacturing",
-    location: "Chakan, Pune (Maharashtra)",
-    salary: "₹18,500 - ₹23,000 / month",
-    accommodation: "Hostel Provided (Subsidized)",
-    foodFacility: "Canteen Available (Subsidized)",
-    openPositions: 45,
-    shift: "8 Hours Rotational",
-    experience: "0 - 2 Years (ITI / Diploma preferred)",
-    badge: "Immediate Hiring"
+    location: "Sanand, Ahmedabad",
+    description: "One of the roles we regularly source for our partner agencies. Salary and openings depend on current employer requirements. Register your interest and we'll match you as live vacancies are confirmed.",
+    experience: "ITI / Diploma preferred",
+    badge: "Regular Sourcing"
   },
   {
     id: "job-2",
     title: "Warehouse Associate & Packer",
     category: "Warehouse",
-    location: "Gurgaon & Taoru (Haryana)",
-    salary: "₹16,000 - ₹19,500 / month",
-    accommodation: "Room Assistance Provided",
-    foodFacility: "Subsidized Meals Provided",
-    openPositions: 80,
-    shift: "10 Hours Day/Night",
-    experience: "Freshers Welcome (10th / 12th Pass)",
-    badge: "Bulk Requirement"
+    location: "Changodar, Ahmedabad",
+    description: "One of the roles we regularly source for our partner agencies. Salary and openings depend on current employer requirements. Register your interest and we'll match you as live vacancies are confirmed.",
+    experience: "10th / 12th Pass",
+    badge: "Regular Sourcing"
   },
   {
     id: "job-3",
     title: "Industrial Electrician & Wireman",
     category: "Engineering",
-    location: "Sriperumbudur, Chennai (Tamil Nadu)",
-    salary: "₹21,000 - ₹26,000 / month",
-    accommodation: "Free Company Accommodation",
-    foodFacility: "Free Canteen on Shift",
-    openPositions: 25,
-    shift: "8 Hours Rotational",
-    experience: "1 - 3 Years (ITI Electrician Mandatory)"
+    location: "Vatva, Ahmedabad",
+    description: "One of the roles we regularly source for our partner agencies. Salary and openings depend on current employer requirements. Register your interest and we'll match you as live vacancies are confirmed.",
+    experience: "ITI Electrician preferred",
+    badge: "Regular Sourcing"
   },
   {
     id: "job-4",
     title: "MIG / TIG Welder & Fitter",
     category: "Automobile",
-    location: "Sanand, Ahmedabad (Gujarat)",
-    salary: "₹22,000 - ₹28,000 / month",
-    accommodation: "Hostel Available",
-    foodFacility: "Canteen Available",
-    openPositions: 30,
-    shift: "8 Hours Day Shift",
-    experience: "1 - 4 Years (Certification Required)",
-    badge: "High Salary"
+    location: "Sanand, Ahmedabad",
+    description: "One of the roles we regularly source for our partner agencies. Salary and openings depend on current employer requirements. Register your interest and we'll match you as live vacancies are confirmed.",
+    experience: "Welder Certification preferred",
+    badge: "Regular Sourcing"
   },
   {
     id: "job-5",
     title: "Forklift Operator & Dock Loader",
     category: "Logistics",
-    location: "Bhiwandi, Thane (Maharashtra)",
-    salary: "₹19,000 - ₹24,000 / month",
-    accommodation: "Shared Room Provided",
-    foodFacility: "Tea & Snacks Provided",
-    openPositions: 20,
-    shift: "9 Hours Shift",
-    experience: "1+ Year (License Required)"
+    location: "Changodar, Ahmedabad",
+    description: "One of the roles we regularly source for our partner agencies. Salary and openings depend on current employer requirements. Register your interest and we'll match you as live vacancies are confirmed.",
+    experience: "Heavy License preferred",
+    badge: "Regular Sourcing"
   },
   {
     id: "job-6",
     title: "Assembly Line Helper & General Worker",
     category: "Manufacturing",
-    location: "Hosur, Bangalore Border (Karnataka)",
-    salary: "₹15,500 - ₹18,500 / month",
-    accommodation: "Company Hostel Provided",
-    foodFacility: "Free Lunch Provided",
-    openPositions: 100,
-    shift: "8 Hours Rotational",
-    experience: "Freshers Allowed (10th Pass)",
-    badge: "100+ Vacancies"
+    location: "Naroda, Ahmedabad",
+    description: "One of the roles we regularly source for our partner agencies. Salary and openings depend on current employer requirements. Register your interest and we'll match you as live vacancies are confirmed.",
+    experience: "Freshers Allowed",
+    badge: "Regular Sourcing"
   }
 ];
 
@@ -240,31 +218,31 @@ export const faqList: FAQItem[] = [
     id: "faq-1",
     category: "candidates",
     question: "Is there any registration fee or charge to apply for jobs?",
-    answer: "No! Viraat Workforce Solutions NEVER charges any fee from job candidates. Our services are 100% FREE for blue-collar workers. If anyone asks for money in our name, please report it to us immediately."
+    answer: "No! Jobtrica Workforce Solutions NEVER charges any fee from job candidates. Our services are 100% FREE for blue-collar workers. If anyone asks for money in our name, please report it to us immediately."
   },
   {
     id: "faq-2",
     category: "candidates",
     question: "How do I apply for live job openings?",
-    answer: "Applying is simple. Click on any job opening card or the 'Apply for Jobs' button to open our simple candidate Google Form. Fill in your basic details (Name, Mobile Number, Qualification, Experience, Preferred Location), and our recruitment team will call you within 24 hours."
+    answer: "Applying is simple. Click on any job opening card or the 'Register Interest' button to open our simple candidate Google Form. Fill in your basic details (Name, Mobile Number, Qualification, Experience, Preferred Location), and our recruitment team will call you within 24 hours."
   },
   {
     id: "faq-3",
     category: "candidates",
     question: "Do you provide room accommodation and food facilities?",
-    answer: "Yes, most of our industrial partner facilities offer subsidized or free hostel accommodation along with clean canteen food during work shifts. Detailed facilities are listed clearly on each job card."
+    answer: "Yes, when live roles are confirmed, most of our industrial partner facilities offer subsidized or free hostel accommodation along with clean canteen food during work shifts."
   },
   {
     id: "faq-4",
     category: "agencies",
-    question: "How do manpower recruitment agencies partner with Viraat Workforce?",
-    answer: "Manpower staffing agencies can partner with us to co-source candidates for large industrial accounts. Click on 'Become Hiring Partner', fill in your agency details, and our Agency Partnership Lead will establish a operational tie-up."
+    question: "How do manpower recruitment agencies partner with Jobtrica?",
+    answer: "Manpower staffing agencies can partner with us to co-source candidates for large industrial accounts. Click on 'Become Hiring Partner', fill in your agency details, and our Agency Partnership Lead will establish an operational tie-up."
   },
   {
     id: "faq-5",
     category: "agencies",
-    question: "Can Viraat Workforce fulfill bulk worker demands of 50 to 500 workers?",
-    answer: "Yes. We specialize in sourcing and candidate mobilization across key industrial corridors in India (Maharashtra, NCR, Gujarat, Tamil Nadu, Karnataka). We maintain active candidate pools for rapid deployment."
+    question: "Can Jobtrica fulfill bulk worker demands of 50 to 500 workers?",
+    answer: "Yes. We specialize in sourcing and candidate mobilization across key industrial corridors in Ahmedabad (Sanand, Naroda, Vatva, Odhav, Changodar). We maintain active candidate pools for rapid deployment."
   },
   {
     id: "faq-6",
@@ -274,32 +252,4 @@ export const faqList: FAQItem[] = [
   }
 ];
 
-export const testimonialsList: Testimonial[] = [
-  {
-    id: "test-1",
-    type: "agency",
-    quote: "Partnering with Viraat Workforce helped our agency supply 200+ trained operators for an auto parts plant in Chakan on tight deadlines. Professional team and transparent terms.",
-    authorName: "Rajesh Kumar",
-    authorRole: "Director",
-    companyOrLocation: "Jai Hanuman Staffing Services, Pune",
-    rating: 5
-  },
-  {
-    id: "test-2",
-    type: "candidate",
-    quote: "I applied online without paying any single rupee. Within 2 days, I got selected as a CNC Operator in Sanand with room accommodation. Very honest company.",
-    authorName: "Vikram Singh",
-    authorRole: "CNC Machine Operator",
-    companyOrLocation: "Sanand Industrial Zone, Gujarat",
-    rating: 5
-  },
-  {
-    id: "test-3",
-    type: "employer",
-    quote: "When we needed 150 warehouse packers during festive peak season in NCR, Viraat Workforce delivered verified candidates quickly with full documentation.",
-    authorName: "Sanjay Verma",
-    authorRole: "Plant HR Manager",
-    companyOrLocation: "Leading Logistics Enterprise, Gurgaon",
-    rating: 5
-  }
-];
+export const testimonialsList: Testimonial[] = [];

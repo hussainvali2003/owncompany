@@ -2,24 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Viraat Workforce Solutions | Trusted Blue-Collar Workforce Partner India",
-  description: "India's premier blue-collar workforce solutions company connecting manufacturing, warehousing, automobile & logistics industries with reliable manpower and partner staffing agencies. 100% genuine zero-fee jobs.",
+  title: "Jobtrica — Blue-Collar Workforce Solutions, Ahmedabad",
+  description: "Jobtrica is Ahmedabad's blue-collar workforce sourcing partner connecting manufacturing, warehousing, automobile & logistics companies in Sanand, Naroda, Vatva, Odhav & Changodar with reliable manpower. Zero-fee jobs for candidates.",
   keywords: [
-    "Blue Collar Staffing India",
-    "Manpower Sourcing Agency",
-    "Industrial Workers Pune",
-    "Factory Machine Operator Sourcing",
-    "Warehouse Packer Hiring Gurgaon",
-    "Staffing Partner India",
-    "Manpower Supplier Alliance",
-    "ITI Diploma Job Placement"
+    "Jobtrica",
+    "Blue Collar Staffing Ahmedabad",
+    "Manpower Sourcing Agency Ahmedabad",
+    "Sanand GIDC Jobs",
+    "Naroda GIDC Jobs",
+    "Vatva Industrial Jobs",
+    "ITI Job Placement Ahmedabad",
+    "Manpower Supplier Gujarat"
   ],
-  authors: [{ name: "Viraat Workforce Solutions" }],
+  authors: [{ name: "Jobtrica Workforce Solutions" }],
   openGraph: {
-    title: "Viraat Workforce Solutions | Connecting Industries with Reliable Workforce",
-    description: "Trusted Blue-Collar Workforce Solutions for Manufacturing, Warehousing, Logistics and Industrial Companies across India.",
-    url: "https://viraatworkforce.com",
-    siteName: "Viraat Workforce Solutions",
+    title: "Jobtrica — Blue-Collar Workforce Solutions, Ahmedabad",
+    description: "Jobtrica is Ahmedabad's blue-collar workforce sourcing partner connecting manufacturing, warehousing, automobile & logistics companies in Sanand, Naroda, Vatva, Odhav & Changodar with reliable manpower. Zero-fee jobs for candidates.",
+    url: "https://jobtrica.com",
+    siteName: "Jobtrica",
     locale: "en_IN",
     type: "website",
   },
@@ -37,24 +37,22 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Viraat Workforce Solutions",
-    "url": "https://viraatworkforce.com",
-    "logo": "https://viraatworkforce.com/images/hero-banner.png",
-    "description": "Trusted Indian Blue-Collar Workforce Solutions partner for manufacturing, warehousing, automobile, and logistics companies.",
+    "name": "Jobtrica Workforce Solutions",
+    "url": "https://jobtrica.com",
+    "logo": "https://jobtrica.com/images/hero-banner.png",
+    "description": "Jobtrica is Ahmedabad's blue-collar workforce sourcing partner connecting manufacturing, warehousing, automobile & logistics companies in Sanand, Naroda, Vatva, Odhav & Changodar with reliable manpower.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Plot 42, Sector 18, Industrial Area",
-      "addressLocality": "Gurgaon",
-      "addressRegion": "Haryana",
-      "postalCode": "122015",
+      "addressLocality": "Ahmedabad",
+      "addressRegion": "Gujarat",
       "addressCountry": "IN"
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91-9876543210",
+      "telephone": "+91-63059-32569",
       "contactType": "customer service",
       "areaServed": "IN",
-      "availableLanguage": ["English", "Hindi"]
+      "availableLanguage": ["English", "Hindi", "Gujarati"]
     }
   };
 

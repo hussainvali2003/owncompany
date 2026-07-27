@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Shield, PhoneCall, Mail, MapPin, ExternalLink, HeartHandshake, Briefcase } from 'lucide-react';
+import Image from 'next/image';
 import { siteConfig } from '../config/siteConfig';
 
 interface FooterProps {
@@ -24,22 +25,19 @@ export const Footer: React.FC<FooterProps> = ({
           
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#F97316] flex items-center justify-center text-white font-extrabold shadow-md">
-                <Shield className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-xl font-extrabold text-white tracking-tight leading-none block">
-                  VIRAAT
-                </span>
-                <span className="text-[10px] font-bold text-[#F97316] uppercase tracking-widest block">
-                  Workforce Solutions
-                </span>
-              </div>
+            <a href="#" className="flex items-center gap-2 group">
+              <Image
+                src="/images/logo.png"
+                alt="Jobtrica Logo"
+                width={150}
+                height={64}
+                className="h-16 w-auto object-contain brightness-0 invert"
+                priority
+              />
             </a>
 
             <p className="text-xs text-slate-300 leading-relaxed max-w-sm">
-              Connecting Indian industrial manufacturing, warehousing, and logistics enterprises with reliable blue-collar workforce and partner manpower agencies.
+              Jobtrica is a newly launched, Ahmedabad-based blue-collar workforce sourcing partner for manufacturing plants, warehousing operators, and industrial projects across Gujarat&apos;s industrial belt.
             </p>
 
             <div className="bg-white/5 border border-white/10 rounded-xl p-3 text-xs text-slate-300 space-y-1">
@@ -50,6 +48,34 @@ export const Footer: React.FC<FooterProps> = ({
               <p className="text-[11px] text-slate-300">
                 We strictly do NOT charge any registration or placement fees from job applicants.
               </p>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 pt-2">
+              <a 
+                href="https://www.instagram.com/jobtrica" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <svg
+                  className="w-4 h-4 text-[#F97316]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -103,11 +129,11 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="pt-2">
               <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Industrial Hubs:</div>
               <div className="flex flex-wrap gap-1 text-[10px] text-slate-300">
-                <span className="bg-white/10 px-2 py-0.5 rounded">Gurgaon</span>
-                <span className="bg-white/10 px-2 py-0.5 rounded">Pune</span>
                 <span className="bg-white/10 px-2 py-0.5 rounded">Sanand</span>
-                <span className="bg-white/10 px-2 py-0.5 rounded">Chennai</span>
-                <span className="bg-white/10 px-2 py-0.5 rounded">Hosur</span>
+                <span className="bg-white/10 px-2 py-0.5 rounded">Naroda</span>
+                <span className="bg-white/10 px-2 py-0.5 rounded">Vatva</span>
+                <span className="bg-white/10 px-2 py-0.5 rounded">Odhav</span>
+                <span className="bg-white/10 px-2 py-0.5 rounded">Changodar</span>
               </div>
             </div>
           </div>
@@ -135,7 +161,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <p>© {new Date().getFullYear()} {siteConfig.name}. All Rights Reserved.</p>
+          <p>© 2026 Jobtrica Workforce Solutions. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

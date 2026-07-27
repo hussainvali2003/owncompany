@@ -46,7 +46,7 @@ export default function HomePage() {
     setModalConfig({
       isOpen: true,
       title: 'Manpower Agency Partnership Form',
-      subtitle: 'Partner with Viraat Workforce to co-source candidates for industrial accounts.',
+      subtitle: 'Partner with Jobtrica to co-source candidates for industrial accounts.',
       formType: 'agency'
     });
   };

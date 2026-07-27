@@ -27,7 +27,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenEmployerFo
             Get In Touch
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B3C5D] mt-3">
-            Contact Viraat Workforce Solutions
+            Contact Jobtrica Workforce Solutions
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
             Reach out to our helpline for candidate job applications, manpower agency partnerships, or industrial worker sourcing requirements.
@@ -48,9 +48,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenEmployerFo
                 <div className="text-xs font-bold text-slate-500 uppercase">Call Helpline</div>
                 <a href={`tel:${siteConfig.contact.phone}`} className="text-base font-extrabold text-[#0B3C5D] hover:text-[#F97316] transition-colors block">
                   {siteConfig.contact.phone}
-                </a>
-                <a href={`tel:${siteConfig.contact.phoneAlt}`} className="text-xs font-semibold text-slate-600 hover:text-[#0B3C5D]">
-                  Alt: {siteConfig.contact.phoneAlt}
                 </a>
               </div>
             </div>
@@ -84,9 +81,40 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenEmployerFo
                 <a href={`mailto:${siteConfig.contact.email}`} className="text-sm font-bold text-[#0B3C5D] hover:underline block">
                   {siteConfig.contact.email}
                 </a>
-                <a href={`mailto:${siteConfig.contact.partnerEmail}`} className="text-xs text-slate-600 hover:underline">
-                  Agencies: {siteConfig.contact.partnerEmail}
+              </div>
+            </div>
+
+            {/* Instagram Card */}
+            <div className="bg-[#F8FAFC] border border-slate-200 rounded-[12px] p-5 flex items-start gap-4 hover:border-[#0B3C5D]/30 transition-colors">
+              <div className="w-11 h-11 rounded-xl bg-[#E1306C] text-white flex items-center justify-center shrink-0">
+                <svg
+                  className="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-xs font-bold text-slate-500 uppercase">Instagram Page</div>
+                <a 
+                  href="https://www.instagram.com/jobtrica" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sm font-bold text-[#0B3C5D] hover:underline block"
+                >
+                  instagram.com/jobtrica
                 </a>
+                <p className="text-[11px] text-slate-500 mt-0.5">Stay connected and see our updates.</p>
               </div>
             </div>
 
@@ -96,12 +124,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenEmployerFo
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <div className="text-xs font-bold text-slate-500 uppercase">Corporate Head Office</div>
+                <div className="text-xs font-bold text-slate-500 uppercase">Based in Ahmedabad, Gujarat</div>
                 <p className="text-xs font-semibold text-slate-800 leading-relaxed mt-0.5">
-                  {siteConfig.contact.address}
+                  Serving Sanand, Naroda, Vatva, Odhav & Changodar industrial estates
                 </p>
                 <div className="mt-2 text-[11px] text-[#0B3C5D] font-bold">
-                  Sourcing Hubs: Gurgaon, Pune, Chennai, Sanand, Hosur
+                  Sourcing Hubs: Sanand, Naroda, Vatva, Odhav, Changodar (Ahmedabad, Gujarat)
                 </div>
               </div>
             </div>
@@ -129,7 +157,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenEmployerFo
           <div className="lg:col-span-7 h-full min-h-[450px]">
             <div className="bg-slate-100 rounded-[16px] overflow-hidden border border-slate-200 shadow-md h-full relative">
               <iframe
-                title="Viraat Workforce Head Office Map Location"
+                title="Jobtrica Head Office Map Location"
                 src={siteConfig.contact.googleMapsEmbed}
                 width="100%"
                 height="100%"

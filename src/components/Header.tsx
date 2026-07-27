@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Shield, PhoneCall, Briefcase, Handshake } from 'lucide-react';
+import Image from 'next/image';
 import { siteConfig } from '../config/siteConfig';
 
 interface HeaderProps {
@@ -39,6 +40,26 @@ export const Header: React.FC<HeaderProps> = ({ onOpenCandidateForm, onOpenAgenc
             <span>Call: {siteConfig.contact.phone}</span>
           </a>
           <span className="text-slate-500">|</span>
+          <a href="https://www.instagram.com/jobtrica" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+            <svg
+              className="w-3.5 h-3.5 text-[#F97316]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <span className="text-slate-500">|</span>
           <span className="text-slate-300">Mon - Sat: 9:00 AM - 7:00 PM</span>
         </div>
       </div>
@@ -53,18 +74,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenCandidateForm, onOpenAgenc
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-[#0B3C5D] flex items-center justify-center text-white shadow-md group-hover:bg-[#F97316] transition-colors">
-              <Shield className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <span className="text-xl font-extrabold text-[#0B3C5D] tracking-tight leading-none block">
-                VIRAAT
-              </span>
-              <span className="text-[10px] font-bold text-[#F97316] uppercase tracking-widest block">
-                Workforce Solutions
-              </span>
-            </div>
+          <a href="#" className="flex items-center gap-2 group">
+            <Image
+              src="/images/logo.png"
+              alt="Jobtrica Logo"
+              width={160}
+              height={68}
+              style={{ height: isScrolled ? '48px' : '62px' }}
+              className="w-auto object-contain transition-all duration-300"
+              priority
+            />
           </a>
 
           {/* Desktop Navigation Links */}

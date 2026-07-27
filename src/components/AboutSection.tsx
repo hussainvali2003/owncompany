@@ -17,7 +17,7 @@ export const AboutSection: React.FC = () => {
               <div className="relative h-[420px] w-full">
                 <Image
                   src="/images/warehouse.png"
-                  alt="Viraat Workforce Solutions logistics and industrial workforce operations"
+                  alt="Jobtrica Workforce Solutions logistics and industrial workforce operations"
                   fill
                   className="object-cover object-center"
                 />
@@ -46,7 +46,7 @@ export const AboutSection: React.FC = () => {
             </div>
 
             <p className="text-slate-700 text-base leading-relaxed">
-              <strong>Viraat Workforce Solutions</strong> connects manufacturing plants, warehousing giants, and infrastructure projects with reliable blue-collar manpower.
+              <strong>Jobtrica</strong> is a newly launched, Ahmedabad-based blue-collar workforce sourcing partner for manufacturing plants, warehousing operators, and industrial projects across Gujarat&apos;s industrial belt.
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               We initially work hand-in-hand with verified manpower agencies by sourcing quality candidates for them. As we expand, our roadmap encompasses direct factory hiring, contract staffing, payroll management, HR services, and workforce technology.
@@ -71,7 +71,7 @@ export const AboutSection: React.FC = () => {
                 </div>
                 <h4 className="font-bold text-[#0B3C5D] text-lg">Our Vision</h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  To become India&apos;s premier workforce solutions platform powered by technology, integrity, and deep industrial domain expertise.
+                  To become Gujarat&apos;s most trusted blue-collar workforce partner, expanding thoughtfully across India.
                 </p>
               </div>
 

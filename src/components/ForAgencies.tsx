@@ -36,7 +36,7 @@ export const ForAgencies: React.FC<ForAgenciesProps> = ({ onOpenAgencyForm }) =>
                 <div>
                   <h3 className="font-bold text-[#0B3C5D] text-base">Need Support Sourcing Workers?</h3>
                   <p className="text-xs text-slate-600 mt-0.5">
-                    Tap into our active candidate talent pools across Maharashtra, NCR, Gujarat, Tamil Nadu, and Karnataka.
+                    Tap into our growing candidate pipeline across Ahmedabad&apos;s industrial belt — Sanand, Naroda, Vatva, Odhav, and Changodar.
                   </p>
                 </div>
               </div>
@@ -46,9 +46,9 @@ export const ForAgencies: React.FC<ForAgenciesProps> = ({ onOpenAgencyForm }) =>
                   <Zap className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#0B3C5D] text-base">Need 50 to 500 Workers Quickly?</h3>
+                  <h3 className="font-bold text-[#0B3C5D] text-base">Need Workers Quickly?</h3>
                   <p className="text-xs text-slate-600 mt-0.5">
-                    Rapid mobilization capability for new plant launches, ramp-ups, peak seasonal shifts, and warehouse surges.
+                    Need workers quickly for a ramp-up or seasonal surge? We&apos;re built to mobilize fast, starting with focused batches as we grow.
                   </p>
                 </div>
               </div>

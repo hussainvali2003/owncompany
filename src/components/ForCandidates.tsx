@@ -67,7 +67,7 @@ export const ForCandidates: React.FC<ForCandidatesProps> = ({ onOpenCandidateFor
               Looking for a Reliable Blue-Collar Job in India?
             </h2>
             <p className="text-slate-200 text-sm sm:text-base mt-2">
-              Helpers, Machine Operators, Packers, Electricians, Welders, Fitters, Drivers & Security Staff — We match you with verified industrial employers across Pune, Gurgaon, Sanand, Chennai, and Bangalore.
+              Helpers, Machine Operators, Packers, Electricians, Welders, Fitters, Drivers & Security Staff — We match you with verified industrial employers across Sanand, Naroda, Vatva, Odhav, and Changodar (Ahmedabad).
             </p>
           </div>
 

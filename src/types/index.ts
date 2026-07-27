@@ -3,14 +3,15 @@ export interface JobOpening {
   title: string;
   category: string;
   location: string;
-  salary: string;
-  accommodation: string;
-  foodFacility: string;
-  openPositions: number;
-  shift: string;
-  experience: string;
+  salary?: string;
+  accommodation?: string;
+  foodFacility?: string;
+  openPositions?: number;
+  shift?: string;
+  experience?: string;
   googleFormUrl?: string;
   badge?: string;
+  description?: string;
 }
 
 export interface IndustryVertical {

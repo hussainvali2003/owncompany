@@ -58,11 +58,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCandidateForm, onOpenAgencyFor
               </span>
               <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
                 <CheckCircle2 className="w-4 h-4 text-[#F97316]" />
-                Verified Agency Partners
+                Building Verified Agency Partnerships
               </span>
               <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10">
                 <CheckCircle2 className="w-4 h-4 text-[#F97316]" />
-                Fast 48-Hour Turnaround
+                Fast 48-Hour Response
               </span>
             </div>
 
@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCandidateForm, onOpenAgencyFor
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-xs font-bold text-[#F97316] uppercase tracking-wider">Active Sourcing Hubs</p>
-                      <p className="text-sm font-bold text-[#0B3C5D] mt-0.5">Pune • Gurgaon • Sriperumbudur • Sanand</p>
+                      <p className="text-sm font-bold text-[#0B3C5D] mt-0.5">Ahmedabad, Gujarat — Sanand • Naroda • Vatva • Odhav • Changodar</p>
                     </div>
                     <div className="bg-[#0B3C5D] text-white p-2 rounded-lg">
                       <Award className="w-5 h-5" />

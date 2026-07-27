@@ -24,7 +24,7 @@ export const TrustSection: React.FC = () => {
             Built On Integrity & Transparency
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B3C5D] mt-3">
-            Why Workers & Agencies Trust Viraat Workforce
+            Why Workers & Agencies Trust Jobtrica
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
             We bridge the gap between manpower suppliers, industrial manufacturing units, and blue-collar job seekers with complete transparency.

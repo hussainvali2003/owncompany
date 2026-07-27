@@ -1,65 +1,45 @@
 'use client';
 
 import React from 'react';
-import { Star, Quote, ShieldCheck } from 'lucide-react';
-import { testimonialsList } from '../config/siteConfig';
+import { Quote, ShieldCheck } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   return (
     <section className="py-20 bg-white border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-[#F97316] bg-[#F97316]/10 px-3 py-1 rounded-full">
-            Success Stories & Feedback
+            Founder&apos;s Note
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B3C5D] mt-3">
-            What Our Partners & Candidates Say
+            Why We Started Jobtrica
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Real feedback from staffing agencies, manufacturing HR managers, and blue-collar workers.
-          </p>
         </div>
 
-        {/* Testimonial Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonialsList.map((t) => (
-            <div
-              key={t.id}
-              className="bg-[#F8FAFC] border border-slate-200 rounded-[12px] p-6 flex flex-col justify-between hover:shadow-lg transition-all relative group"
-            >
-              <div>
-                {/* Quote Icon */}
-                <Quote className="w-8 h-8 text-[#0B3C5D]/20 mb-3 group-hover:text-[#F97316]/30 transition-colors" />
-
-                {/* Rating Stars */}
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-
-                {/* Quote Text */}
-                <p className="text-slate-700 text-sm italic leading-relaxed mb-6">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
+        {/* Founder's Note Card */}
+        <div className="bg-[#F8FAFC] border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all relative group max-w-3xl mx-auto">
+          {/* Quote Icon */}
+          <Quote className="w-12 h-12 text-[#0B3C5D]/10 absolute -top-5 -left-5 bg-white rounded-full p-2 border border-slate-200" />
+          
+          <div className="space-y-6">
+            <p className="text-slate-700 text-lg sm:text-xl italic leading-relaxed text-center font-medium">
+              &ldquo;We saw how hard it is for Ahmedabad&apos;s manpower agencies to find quality candidates fast, and how often job seekers get burned by fake listings and hidden fees. We&apos;re building Jobtrica to fix both — starting right here in Sanand, Naroda, and Vatva.&rdquo;
+            </p>
+            
+            <div className="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="text-center sm:text-left">
+                <div className="font-extrabold text-[#0B3C5D] text-base">Hussain Vali</div>
+                <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">Founder, Jobtrica</div>
+                <div className="text-[11px] text-[#F97316] font-bold">Ahmedabad, Gujarat</div>
               </div>
-
-              {/* Author Details */}
-              <div className="pt-4 border-t border-slate-200/80 flex items-center justify-between">
-                <div>
-                  <div className="font-bold text-[#0B3C5D] text-sm">{t.authorName}</div>
-                  <div className="text-xs text-slate-500 font-medium">{t.authorRole}</div>
-                  <div className="text-[11px] text-[#F97316] font-semibold">{t.companyOrLocation}</div>
-                </div>
-                <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center">
-                  <ShieldCheck className="w-4 h-4" />
-                </div>
+              <div className="flex items-center gap-2 bg-[#0B3C5D]/5 border border-[#0B3C5D]/10 rounded-full px-4 py-1.5 text-xs text-[#0B3C5D] font-bold">
+                <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                <span>100% Zero-Fee Sourcing Partner</span>
               </div>
-
             </div>
-          ))}
+          </div>
         </div>
 
       </div>

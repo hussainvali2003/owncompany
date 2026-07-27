@@ -37,7 +37,7 @@ export const Openings: React.FC<OpeningsProps> = ({ onApplyJob }) => {
             Verified Job Vacancies
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#0B3C5D] mt-3">
-            Current Blue-Collar Openings Across India
+            Current Blue-Collar Openings Across Ahmedabad
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
             100% Genuine, Zero-Fee job opportunities with food and room facilities. Direct Google Form application.
@@ -92,68 +92,89 @@ export const Openings: React.FC<OpeningsProps> = ({ onApplyJob }) => {
                   <span>{job.location}</span>
                 </div>
 
-                {/* Salary Banner */}
-                <div className="bg-[#0B3C5D]/5 border border-[#0B3C5D]/10 rounded-xl p-3 mb-5 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-[#0B3C5D] text-white flex items-center justify-center font-bold text-sm">
-                      ₹
+                {/* Job Description (Role Category Info) */}
+                {job.description && (
+                  <p className="text-xs text-slate-600 leading-relaxed mb-4">
+                    {job.description}
+                  </p>
+                )}
+
+                {/* Salary Banner (only if salary is provided) */}
+                {job.salary && (
+                  <div className="bg-[#0B3C5D]/5 border border-[#0B3C5D]/10 rounded-xl p-3 mb-5 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 rounded-lg bg-[#0B3C5D] text-white flex items-center justify-center font-bold text-sm">
+                        ₹
+                      </div>
+                      <div>
+                        <div className="text-[10px] text-slate-500 font-bold uppercase">Monthly Salary</div>
+                        <div className="text-sm font-extrabold text-[#0B3C5D]">{job.salary}</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">Monthly Salary</div>
-                      <div className="text-sm font-extrabold text-[#0B3C5D]">{job.salary}</div>
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
-                    Fixed Pay
-                  </span>
-                </div>
-
-                {/* Key Facilities List */}
-                <div className="space-y-2.5 text-xs text-slate-650 border-t border-slate-100 pt-4 mb-6">
-                  
-                  <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-1.5 text-slate-600">
-                      <Home className="w-4 h-4 text-[#0B3C5D]" />
-                      Accommodation:
-                    </span>
-                    <span className="font-semibold text-slate-800">{job.accommodation}</span>
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-1.5 text-slate-600">
-                      <Utensils className="w-4 h-4 text-[#F97316]" />
-                      Food Facility:
-                    </span>
-                    <span className="font-semibold text-slate-800">{job.foodFacility}</span>
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-1.5 text-slate-600">
-                      <Users className="w-4 h-4 text-indigo-600" />
-                      Open Positions:
-                    </span>
-                    <span className="font-bold text-[#F97316] bg-[#F97316]/10 px-2 py-0.5 rounded">
-                      {job.openPositions} Seats
+                    <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
+                      Fixed Pay
                     </span>
                   </div>
+                )}
 
-                  <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-1.5 text-slate-600">
-                      <Clock className="w-4 h-4 text-emerald-600" />
-                      Work Shift:
-                    </span>
-                    <span className="font-medium text-slate-700">{job.shift}</span>
+                {/* Key Facilities List (only render fields that exist) */}
+                {(job.accommodation || job.foodFacility || job.openPositions || job.shift || job.experience) && (
+                  <div className="space-y-2.5 text-xs text-slate-650 border-t border-slate-100 pt-4 mb-6">
+                    
+                    {job.accommodation && (
+                      <div className="flex items-center justify-between">
+                        <span className="flex items-center gap-1.5 text-slate-600">
+                          <Home className="w-4 h-4 text-[#0B3C5D]" />
+                          Accommodation:
+                        </span>
+                        <span className="font-semibold text-slate-800">{job.accommodation}</span>
+                      </div>
+                    )}
+
+                    {job.foodFacility && (
+                      <div className="flex items-center justify-between">
+                        <span className="flex items-center gap-1.5 text-slate-600">
+                          <Utensils className="w-4 h-4 text-[#F97316]" />
+                          Food Facility:
+                        </span>
+                        <span className="font-semibold text-slate-800">{job.foodFacility}</span>
+                      </div>
+                    )}
+
+                    {job.openPositions !== undefined && (
+                      <div className="flex items-center justify-between">
+                        <span className="flex items-center gap-1.5 text-slate-600">
+                          <Users className="w-4 h-4 text-indigo-600" />
+                          Open Positions:
+                        </span>
+                        <span className="font-bold text-[#F97316] bg-[#F97316]/10 px-2 py-0.5 rounded">
+                          {job.openPositions} Seats
+                        </span>
+                      </div>
+                    )}
+
+                    {job.shift && (
+                      <div className="flex items-center justify-between">
+                        <span className="flex items-center gap-1.5 text-slate-600">
+                          <Clock className="w-4 h-4 text-emerald-600" />
+                          Work Shift:
+                        </span>
+                        <span className="font-medium text-slate-700">{job.shift}</span>
+                      </div>
+                    )}
+
+                    {job.experience && (
+                      <div className="flex items-center justify-between">
+                        <span className="flex items-center gap-1.5 text-slate-600">
+                          <Briefcase className="w-4 h-4 text-amber-600" />
+                          Eligibility:
+                        </span>
+                        <span className="font-medium text-slate-700">{job.experience}</span>
+                      </div>
+                    )}
+
                   </div>
-
-                  <div className="flex items-center justify-between">
-                    <span className="flex items-center gap-1.5 text-slate-600">
-                      <Briefcase className="w-4 h-4 text-amber-600" />
-                      Eligibility:
-                    </span>
-                    <span className="font-medium text-slate-700">{job.experience}</span>
-                  </div>
-
-                </div>
+                )}
               </div>
 
               {/* Apply Button */}
@@ -161,7 +182,7 @@ export const Openings: React.FC<OpeningsProps> = ({ onApplyJob }) => {
                 onClick={() => onApplyJob(job.title)}
                 className="btn-primary-corporate w-full justify-center py-3 text-sm"
               >
-                <span>Apply via Google Form</span>
+                <span>Register Interest</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
 
